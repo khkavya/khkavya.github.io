@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!--
+Template Name: Cooban
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>Kavya | Project 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="wrapper bgded overlay" style="background-image:url('../images/demo/backgrounds/lagoon.jpg');"> 
+  <!-- ################################################################################################ -->
+  <div class="row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="../index.html">KAVYA HARISH</a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="About.html">About Me</a></li>
+          <li class="active"><a href="projects.html">Projects</a></li>
+          <li><a class="drop" href="#">Misc</a>
+            <ul>
+              <li><a href="tools.html">Tools</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="thesis1.html">Classification analysis of Acute Respiratory Distress Syndrome</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+  <div id="bottom-right">
+    <!--<footer><a class="btn medium" href="#">Viverra egestas</a></footer>-->
+          <a href="mailto:kh.kavya18@gmail.com" class="font-x2 fa fa-envelope-square"> &nbsp;</a>
+          <a href='https://www.linkedin.com/in/kavyakh/' class=" font-x2 fa fa-linkedin-square"> &nbsp;</a>
+          <a href="https://github.com/khkavya" class="font-x2 fa fa-github"></a>
+    </div>
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="content"> 
+      <!-- ################################################################################################ -->
+      <h1 class="font-x2">Classification analysis of Acute Respiratory Distress Syndrome <a href="https://github.com/khkavya/Predicting-ECMO-suitability-in-ARDS-patients-through-Machine-Learning-models.git" class="font-x2 fa fa-github"></a></h1>
+      <p> <b>Background</b></p>
+      <p>Acute Respiratory Distress Syndrome (ARDS) is a critical medical condition characterized by 
+        sudden and severe lung inflammation, leading to decreased oxygen levels in the blood. With its 
+        high mortality rate and challenges in diagnosis and treatment, ARDS presents a significant burden
+        to healthcare systems worldwide. The COVID-19 pandemic has further highlighted the importance of 
+        understanding and managing ARDS cases. </p>
+      <p>A new treatment to improve the disease outcome for ARDS patients is the Extracorporeal Membrane Oxygenation (ECMO) therapy. 
+        Although ECMO is a highly complex therapy, its success in saving lives and improving 
+        patient outcomes has made it an indispensable tool in critical care settings around the world.</p>
+
+      <p><b>Research focus</b></p>
+      <p>Over the past decade, several clinical trials have been conducted to evaluate the benefits of ECMO compared to conventional 
+        management for severe respiratory failure. The results have been mixed, and the efficacy of ECMO can depend on factors such as 
+        patient selection criteria, the underlying condition, etc. ECMO is a highly specialized and resource-intensive treatment that 
+        carries significant risks and complications. Therefore, it should be reserved for patients who are most likely to benefit from 
+        the treatment.</p>
+      <p>In this project we analysed medical records of 450 ARDS patients who have undergone ECMO therapy. Each individual record 
+        encompassed a multitude of biomarkers alongside a clinical outcome. The aim of this project is to investigate the association 
+        between specific biomedical markers and the suitability of ARDS patients for ECMO treatment.The goal is predict whether a patient will survive the ECMO 
+        treatment and to identify relevant biomarkers for assessing treatment outcomes.</p>
+
+      <p><b>Dataset</b></p>
+      <p>The dataset used for this study contain biomarker data of 450 ARDS patients. There were 145 women and 305 men among the patients, 
+        and their ages ranged from 17 to 83. Of the 450 patients, 341 (75.8%) survived ECMO treatment and 109 (24.2%) did not survive the 
+        treatment. Furthermore, the dataset contain 33 variables: 2 binary, one categorical and 30 continuous.</p>
+        <div id="gallery">
+          <figure>
+            <ul class="nospace clear">
+              <li class="one_third first"><a href="#"><img src="../images/demo/gallery/plots1-2.png" alt=""></a></li>
+              <li class="two_third"><a href="#"><img src="../images/demo/gallery/indication.png" alt=""></a></li>
+            </ul>
+            <figcaption class="font-xs">Fig1.1. Illustrates gender proportion (left) and the proportion of different disease 
+              indicators in the dataset (right).</figcaption>
+          </figure>
+        </div>
+      <p>Twenty continuous variables out of the 33 variables contain missing values.  The variable with the largest number of missing 
+        values in our dataset is albumin (46%). Since no explanation was provided about their absence, we eliminated the variable 
+        'albumin' from the analysis. </p>
+        <div style="text-align: center;">
+          <figure>
+            <img src="../images/demo/gallery/missingvalue.png" alt="" style="width:9in">
+            <figcaption class="font-xs">Fig1.2. Percentage and location of missing values in each variable in the dataset. </figcaption>
+          </figure>
+        </div>
+      <p>Beyond the definitions of some of the features, no further details about the dataset or the features included were provided 
+          in the dataset manuscript.</p>
+
+      <p><b>Methodology</b></p>
+      <p>Healthcare data often contains highly correlated variables. Such multicollinearity in data can cause problems with developing 
+        prediction models. Moreover, the lesser the number of predictors the more the possibility of obtaining a simpler and more 
+        understandable model. Due to that reason we initiated the analysis with feature selection algorithms like hypothesis testing, 
+        Lasso regression, and Boruta algorithm. </p>
+      <p>Machine Learning (ML) models are widely used in clinical data analysis due to its ability to uncover complex patterns and identify 
+        subtle relationships. Therefore, following feature selection, we employed ML algorithms for prediction. We explored five 
+        machine learning algorithms; logistic regression, Naive Bayes, decision trees, random forest, and neural networks. Each algorithm 
+        was evaluated based on performance metrics such as Matthews Correlation Coefficient (MCC), F1 score, and accuracy.</p>
+      <p>Data preprocessing played a crucial role in ensuring the integrity and robustness of our analyses. Techniques for handling 
+        missing values and addressing data imbalance (Random Under-Sampling) were meticulously applied to optimize model performance. 
+        Model evaluation was conducted on both imbalanced and balanced datasets.</p>
+      
+      <p><b>Results</b></p>
+      <p>Correlations in the dataset were evaluated using both the Pearson correlation coefficient (parametric test) and the 
+        Spearman correlation coefficient (non parametric test). If the correlation between variables exceeded 0.7, we retained only one 
+        of the variables to avoid problems when implementing prediction models. In our case, the variable with the highest number 
+        of missing values would be removed. Due to the relatively less number of missing values in the dataset, we replaced it with the 
+        median of the corresponding column. The imputed dataset contain 29 features; 26 continuous, two binary and one categorical.</p>
+      <p>Lasso regression performs automatic variable selection by setting the coefficients of irrelevant variables to zero. 
+        Out of the 34 explanatory variables in our dataset, lasso selected five variables as important (see fig.1.1).</p>
+        <div style="text-align: center;">
+          <figure>
+            <img src="../images/demo/gallery/vslrgn-3.png" alt="" style="width:4in">
+            <figcaption class="font-xs">Fig1.3. Represents the variables selected by LASSO on y-axis and their coefficients on x-axis</figcaption>
+          </figure>
+        </div>
+        <p>Besides lasso, we also used Boruta for feature selection because it can capture non-linear relationships and interactions in the 
+          data. Boruta identified eight variables as important in our dataset (see fig 1.2).</p>
+        <div style="text-align: center;">
+          <figure>
+            <img src="../images/demo/gallery/boruta1.png" alt="" style="width:7in">
+            <figcaption class="font-xs">Fig1.4. Result of Boruta algorithm applied to entire dataset. Green box-plots represents 
+              confirmed important variables, red box-plots are confirmed unimportant variables, and yellow box-plots are tentative. 
+              Maximum number of importance source runs=500. </figcaption>
+          </figure>
+        </div>
+        <p>Following feature selection, we used ML algorithms for generating prediction results. The MCC, F1 score and accuracy of the ML 
+          models are given in table 1.1. In general, all the methods achieved good accuracy. The models applied to variables selected by 
+          feature selection algorithms performed slightly better than the full model.Random forest achieved high scores in all the 
+          three evaluation metrics while Naive Bayes (full model) attained lowest scores.</p>
+      <br>
+      <div class="scrollable">
+        <table>
+          <tbody>
+            <tr>
+              <td> Model</td>
+              <td>Logistic regression</td>
+              <td>Logistic regression (Lasso)</td>
+              <td>Decision trees</td>
+              <td>Decision trees (Boruta)</td>
+              <td>Random forest</td>
+              <td>Random forest (Boruta)</td>
+              <td>Naive Bayes</td>
+              <td>Naive Bayes (Lasso)</td>
+              <td>Neural networks</td>
+            </tr>
+            <tr>
+              <td> MCC</td>
+              <td>-0.0091</td>
+              <td>0.2457</td>
+              <td>0</td>
+              <td>0.1752</td>
+              <td>0.2169</td>
+              <td>0.2731</td>
+              <td>-0.0752</td>
+              <td>0.0857</td>
+              <td>0.1415</td>
+            </tr>
+            <tr>
+              <td> F1 score</td>
+              <td>0.1418</td>
+              <td>0.2727</td>
+              <td>NaN</td>
+              <td>0.2963</td>
+              <td>0.1111</td>
+              <td>0.3333</td>
+              <td>0.1290</td>
+              <td>0.1290</td>
+              <td>0.3721</td>
+            </tr>
+            <tr>
+              <td> Accuracy</td>
+              <td>0.7160</td>
+              <td>0.8025</td>
+              <td>0.7901</td>
+              <td>0.7654</td>
+              <td>0.8024</td>
+              <td>0.8024</td>
+              <td>0.6667</td>
+              <td>0.6667</td>
+              <td>0.6625</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="font-xs"> Table 1.1. Results of ECMO survival prediction on complete imbalanced dataset; Dataset imbalance 300 
+          survived (positive instances), 103 died (negative instances). Number of trees in random forest=500, Neural network learning 
+          rate=0.01.</h3>
+      </div>
+      <p>Even though we obtained generally good model accuracy on complete dataset, the MCC and F1 scores remained comparatively low.
+        This means that these classifiers are no better than a random guess classifier. We believe that this is due to data imbalance 
+        and therefore we addressed this issue with the under-sampling technique. </p>
+      <p>Numerous techniques exist for managing data imbalance. The issue of data imbalance in our dataset was tackled using the 
+        Random Under-Sampling (RUS) technique. RUS was chosen due to its simplicity, speed, and the fact that it does not involve 
+        manipulation of data instances. To implement this technique, we created a balanced dataset such that it contain all the instances 
+        from the minority class and randomly selected instances from the majority class. After that, we applied all prediction methods to this 
+        under-sampled dataset and the results obtained are given in table 1.2.</p>
+        
+        <br>
+        <div class="scrollable">
+          <table>
+            <tbody>
+              <tr>
+                <td> Model</td>
+                <td>Logistic regression</td>
+                <td>Logistic regression (Lasso)</td>
+                <td>Decision trees</td>
+                <td>Decision trees (Boruta)</td>
+                <td>Random forest</td>
+                <td>Random forest (Boruta)</td>
+                <td>Naive Bayes</td>
+                <td>Naive Bayes (Lasso)</td>
+                <td>Neural networks</td>
+              </tr>
+              <tr>
+                <td> MCC</td>
+                <td>-0.0996</td>
+                <td>0.2587</td>
+                <td>-0.0644</td>
+                <td>-0.0566</td>
+                <td>0.1051</td>
+                <td>0.1924</td>
+                <td>0.1459</td>
+                <td>0.2981</td>
+                <td>0.7218</td>
+              </tr>
+              <tr>
+                <td> F1 score</td>
+                <td>0.3684</td>
+                <td>0.5</td>
+                <td>0.5714</td>
+                <td>0.4102</td>
+                <td>0.4</td>
+                <td>0.55</td>
+                <td>0.5122</td>
+                <td>0.6154</td>
+                <td>0.8148</td>
+              </tr>
+              <tr>
+                <td> Accuracy</td>
+                <td>0.4146</td>
+                <td>0.5610</td>
+                <td>0.4878</td>
+                <td>0.4390</td>
+                <td>0.4878</td>
+                <td>0.5610</td>
+                <td>0.5652</td>
+                <td>0.5122</td>
+                <td>0.8750</td>
+              </tr>
+            </tbody>
+          </table>
+        <h3 class="font-xs"> Table 1.2. Results of ECMO survival prediction on balanced under-sampled dataset; Dataset imbalance 101 positive instances, 103 negative 
+            instances. Number of trees in random for- est=500, Neural network learning rate=0.01.</h3>
+      </div>
+      <p>Compared to the previous results, here all methods achieved better F1 scores but lower accuracy, possibly stemming from 
+        information loss. Similar to previous results, the models applied to variables selected by feature selection algorithms performed 
+        slightly better than the full model. But, decision trees applied to Boruta-selected variables exhibited inferior performance in 
+        comparison to the full model. Neural networks outperformed all the other models in terms of all the three metrics 
+        (MCC: 0.72, F1: 0.81, accuracy: 0.88).</p>
+
+      <p><b>Discussion</b></p>
+      <p>Our feature selection algorithms identified lactate, chemotherapy status, and respiratory rate as significant variables. 
+         The noteworthy role of lactate levels in ECMO treatment gains further validation from established research articles. This suggests 
+         that doctors should consider the values of these biomarkers when assessing the suitability of ECMO therapy for a patient.</p>
+      <p>For construction of binary classification models for ECMO survival, for similar analyses, it is advisable to consider using 
+          random forest for imbalanced datasets and neural networks for datasets with a more balanced distribution.</p>
+      <p>An important point to highlight is the substantial variability in these evaluation metrics across different runs. Notably, 
+        neural networks consistently maintained high MCC, F1 score, and accuracy on the under-sampled dataset, outperforming other 
+        models. It is advisable to consider the average of these metrics for a more comprehensive assessment of model effectiveness. 
+        In the future, we aim to utilize average metric values to enhance model evaluation and explore the reasons for this observed 
+        variability.</p>
+      <p>Although under-sampling addressed data imbalance, it came at the cost of losing valuable information. To enhance our approach, 
+        we also plan to explore different methods for handling data imbalance in future work, aiming to strike a better balance between 
+        preserving information and addressing the imbalance.</p>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2024 by Kavya K H</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="../layout/scripts/jquery.placeholder.min.js"></script>
+<!-- / IE9 Placeholder Support -->
+</body>
+</html>
